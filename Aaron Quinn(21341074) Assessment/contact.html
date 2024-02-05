@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Aaron Quinn </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="assessment.js"></script>
+    <a href="index.html"> Back home</a>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <br/>
+
+    <h3> Socials: </h3>
+    <div id="Scoial">
+        <a href="https://www.instagram.com/accounts/login/?next=/muse/"><img src="Instagram.jpg" style="max-width: 20%;" alt="Muse" /> </a>
+        <a href="https://twitter.com/muse"><img src="Twitter.jpg" style="max-width: 20%;" alt="Muse" /> </a>
+        <a href="https://en-gb.facebook.com/muse"><img src="Facebook.jpg" style="max-width: 20%;" alt="Muse" /> </a>
+        <a href="https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI"><img src="spotify.jpg" style="max-width: 20%;" alt="Muse" /> </a>
+    </div>
+    <div id="mailing">
+        <h3> Sign up for the Mailing List:</h3>
+
+        <p id="error" class="error"> </p>
+        <p id="success" class="success"> </p>
+        <br/>
+        <form>
+            <label for="name"></label>
+            <input type="name" id="name" placeholder="First Name" required>
+            <br />
+            <label for="email"></label>
+            <input type="email" id="email" placeholder="email address" required>
+            <br />
+            <input onclick="validate_name()" type="submit" id="addBtn" value="Sign Up">
+            <br/>
+        </form>
+        <div id="formResponse"></div>
+
+        <small>
+            By clicking Sign Up, you agree to our <a href="url"> Terms </a> , <a href="#"> Data Policy</a> and <a href="#"> Cookie Policy</a>
+            You may recieve SMS notifications from us and can opt out at any time. 
+        </small>
+
+        <br />
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Email</td>
+                </tr>
+            </thead>
+            <tbody id="Mailing-List-Table">
+            </tbody>
+        </table>
+
+    </div>
+</body>
+
+</html>
